@@ -55,7 +55,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="navbar font-semibold py-5 px-10 text-black" style={{ backgroundColor: '#edede4' }}>
+            <div className="sticky top-0 z-10 navbar font-semibold py-5 px-10 text-black" style={{ backgroundColor: '#edede4' }}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

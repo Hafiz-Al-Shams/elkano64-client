@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import Banner from "../../components/Banner";
+import FixedBadge from "../../components/FixedBadge";
 
 
 
@@ -9,7 +11,8 @@ const Home = () => {
                 <title>Elkano64 - Home</title>
             </Helmet>
             <div>
-                this is home
+                <Banner></Banner>
+                <FixedBadge></FixedBadge>
             </div>
         </>
     );
