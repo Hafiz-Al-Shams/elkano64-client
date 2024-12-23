@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Banner from "../../components/Banner";
 import FixedBadge from "../../components/FixedBadge";
+import TopFoods from "../../components/TopFoods";
 
 
 
@@ -10,10 +11,10 @@ const Home = () => {
             <Helmet>
                 <title>Elkano64 - Home</title>
             </Helmet>
-            <div>
-                <Banner></Banner>
-                <FixedBadge></FixedBadge>
-            </div>
+
+            <Banner></Banner>
+            <FixedBadge></FixedBadge>
+            <TopFoods></TopFoods>
         </>
     );
 };

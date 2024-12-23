@@ -25,7 +25,7 @@ const Register = () => {
         const photo = form.photoURL.value;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        // console.log(email, password);
 
         // password validation
         if (password.length < 6) {
@@ -56,13 +56,13 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
-                console.log('Registration successful: ', result.user.email);
+                // console.log('Registration successful: ', result.user.email);
 
                 updateUserProfile({ displayName: name, photoURL: photo })
                     .then(() => {
                         signOutUser()
                             .then(() => {
-                                console.log('user signOut successful');
+                                // console.log('user signOut successful');
                                 Swal.fire({
                                     title: 'Registration Successful',
                                     text: 'Now please Login to Continue',

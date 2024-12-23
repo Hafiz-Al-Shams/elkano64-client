@@ -27,7 +27,7 @@ const Navbar = () => {
     const handleLogOut = () => {
         signOutUser()
             .then(() => {
-                console.log('user signOut successful');
+                // console.log('user signOut successful');
                 Swal.fire({
                     title: 'Log out done!',
                     icon: 'warning',
@@ -55,7 +55,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="sticky top-0 z-10 navbar font-semibold py-5 px-10 text-black" style={{ backgroundColor: '#edede4' }}>
+            <div className="sticky top-0 z-10 navbar font-medium py-3 px-10 text-black" style={{ backgroundColor: '#edede4' }}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -78,10 +78,10 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <Link to="/" className="text-3xl font-bold">Elkano64</Link>
+                    <Link to="/" className="text-3xl font-semibold">Elkano64</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 space-x-4 font-bold">
+                    <ul className="menu menu-horizontal px-1 space-x-4 font-semibold">
                         {links}
                     </ul>
                 </div>

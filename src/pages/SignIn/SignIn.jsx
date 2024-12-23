@@ -23,11 +23,11 @@ const SignIn = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password);
+        // console.log(email, password);
 
         signInUser(email, password)
             .then(result => {
-                console.log('Login successful: ', result.user.email);
+                // console.log('Login successful: ', result.user.email);
 
                 Swal.fire({
                     title: 'Login Successful',
@@ -38,7 +38,7 @@ const SignIn = () => {
                 // navigate(`/myEquipmentsList/${result.user.email}`);
 
                 // const user = { email: result.user.email };
-                // axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
+                // axios.post('https://elkano64-server.vercel.app/jwt', user, { withCredentials: true })
                 //     .then(res => console.log(res.data))
 
 

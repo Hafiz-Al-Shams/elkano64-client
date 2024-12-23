@@ -21,7 +21,7 @@ const Banner = () => {
             </div>
 
             {/* slide2 */}
-            <div id="slide2" className="carousel-item relative w-full bg-[url('https://i.ibb.co.com/0qs1h6t/slider22.jpg')] bg-no-repeat bg-cover bg-center bg-blend-overlay pt-52" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+            <div id="slide2" className="carousel-item relative w-full bg-[url('https://i.ibb.co.com/KjTB1WT/slider33.jpg')] bg-no-repeat bg-cover bg-center bg-blend-overlay pt-52" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
                 <div className="text-center mx-auto space-y-3">
                     <h1 className="font-bold text-6xl text-white">Ingredients Grown on Our Farms</h1>
                     <h4 className="font-semibold text-2xl text-gray-300/90 pb-4">Enjoy the food experience mostly from our farms, through <br />our kitchen, and to your fork.</h4>
@@ -37,7 +37,7 @@ const Banner = () => {
             </div>
 
             {/* slide3 */}
-            <div id="slide3" className="carousel-item relative w-full bg-[url('https://i.ibb.co.com/KjTB1WT/slider33.jpg')] bg-no-repeat bg-cover bg-center bg-blend-overlay pt-52" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+            <div id="slide3" className="carousel-item relative w-full bg-[url('https://i.ibb.co.com/0qs1h6t/slider22.jpg')] bg-no-repeat bg-cover bg-center bg-blend-overlay pt-52" style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
                 <div className="text-center mx-auto space-y-3">
                     <h1 className="font-bold text-6xl text-white">We Take Care with Love</h1>
                     <h4 className="font-semibold text-2xl text-gray-300/90 pb-4">We are passionate about making amazing recipes. We <br />serve foods simply full of the finest tastes.</h4>
