@@ -50,7 +50,7 @@ const TopFoods = () => {
                 }
             </div>
             <div className="text-center mb-16">
-                <Link to="/foods">
+                <Link to="/all-foods">
                     <button className="btn btn-secondary btn-lg font-semibold">View All</button>
                 </Link>
             </div>

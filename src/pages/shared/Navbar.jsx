@@ -42,7 +42,7 @@ const Navbar = () => {
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/">All Foods</NavLink></li>
+        <li><NavLink to="/all-foods">All Foods</NavLink></li>
         <li><NavLink to="/">Gallery</NavLink></li>
     </>
 
@@ -53,9 +53,17 @@ const Navbar = () => {
     </>
 
 
+    const [theme, setTheme] = useState("light");
+
+    const handleThemeChange = (newTheme) => {
+        setTheme(newTheme);
+        document.documentElement.setAttribute("data-theme", newTheme);
+    };
+
+
     return (
         <>
-            <div className="sticky top-0 z-10 navbar font-medium py-3 px-10 text-black" style={{ backgroundColor: '#edede4' }}>
+            <div className="sticky top-0 z-10 navbar font-medium py-3 px-10 bg-base-300 text-base-content">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -85,7 +93,21 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="navbar-end space-x-8">
+
+
+                    <div className="">
+                        <select
+                            className="select select-bordered w-24 text-xs"
+                            value={theme}
+                            onChange={(e) => handleThemeChange(e.target.value)}
+                        >
+                            <option value="light" >Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="dim">Dim</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
 
 
                     {
@@ -114,12 +136,12 @@ const Navbar = () => {
                                     </div>
                                     <div><a onClick={handleLogOut} data-tooltip-id="my-tooltip"
                                         data-tooltip-content={userName}
-                                        data-tooltip-place="bottom" className="btn bg-yellow-50 font-bold">Log Out</a></div>
+                                        data-tooltip-place="bottom" className="btn bg-neutral-400/40 text-base-content font-bold">Log Out</a></div>
                                 </div>
                             </>
                             :
                             <>
-                                <NavLink to="/signIn"><button className="btn bg-yellow-50 font-bold">Login</button></NavLink>
+                                <NavLink to="/signIn"><button className="btn bg-neutral-400/40 text-base-content font-bold">Login</button></NavLink>
                             </>
                     }
                     <Tooltip id="my-tooltip" />
