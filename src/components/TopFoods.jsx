@@ -9,7 +9,7 @@ const TopFoods = () => {
     const [topFoods, setTopFoods] = useState([]);
 
     useEffect(() => {
-        fetch('https://elkano64-server.vercel.app/foods')
+        fetch('http://localhost:5000/fixedFoods')
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
