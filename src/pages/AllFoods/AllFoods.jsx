@@ -107,13 +107,11 @@ const AllFoods = () => {
 
                                 <p className="font-semibold text-lg text-gray-700">Purchase-Count Today: {food.purchaseCount}</p>
 
-                                <p className="font-semibold text-lg text-gray-700">Rating: {food.rating}</p>
 
-                                <p className="font-semibold text-lg text-gray-700">Delivery Time needed: {food.deliveryTime}</p>
-                                <p className="font-semibold text-lg text-gray-700">Custom info: {food.customization}</p>
 
                                 <p className="font-semibold text-lg text-gray-700">Available Quantity: {food.availableQuantity}</p>
                                 <p className="font-semibold text-lg text-gray-700">Description: {food.description}</p>
+                                <p className="font-semibold text-lg text-gray-700">Origin: {food.foodOrigin}</p>
                                 <div className="card-actions justify-end mt-2">
                                     <Link to={`/foods/${food._id}`}>
                                         <button className="btn btn-primary px-4 text-lg">Details</button>

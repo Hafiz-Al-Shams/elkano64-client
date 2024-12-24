@@ -13,9 +13,11 @@ const SocialLogin = () => {
             .then(result => {
                 // console.log('Login successful: ', result.user.email);
                 Swal.fire({
-                    title: 'Login Successful',
-                    icon: 'success',
-                    confirmButtonText: 'ok'
+                    position: "center",
+                    icon: "success",
+                    title: 'Google Login Successful',
+                    showConfirmButton: false,
+                    timer: 2000
                 });
                 // navigate(`/myEquipmentsList/${result.user.email}`);
             })

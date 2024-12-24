@@ -11,16 +11,18 @@ const FoodDetails = () => {
 
     const food = useLoaderData();
 
-    const { _id, name, category, description, price, purchaseCount, rating, customization, deliveryTime, availableQuantity, photo, userEmail } = food;
+    const { _id, name, category, description, price, purchaseCount, rating, customization, deliveryTime, availableQuantity, photo, userEmail, foodOrigin } = food;
 
 
     const handlePurchase = () => {
-        Swal.fire({
-            title: 'Invalid Authority',
-            text: 'You can only Edit Equipment from your Own List',
-            icon: 'error',
-            confirmButtonText: 'understood'
-        });
+
+        // Swal.fire({
+        //     title: 'Invalid Authority',
+        //     text: 'You can only Edit Equipment from your Own List',
+        //     icon: 'error',
+        //     confirmButtonText: 'understood'
+        // });
+
     }
 
 
@@ -31,8 +33,6 @@ const FoodDetails = () => {
             </Helmet>
 
             <div className="flex justify-center items-center gap-7 pt-6 pb-2">
-
-                {/* <div className="w-40"><Lottie animationData={Details}></Lottie></div> */}
 
                 <h1 className="text-5xl font-bold">{name}</h1>
             </div>
@@ -49,12 +49,10 @@ const FoodDetails = () => {
                     <p className="font-semibold text-lg text-gray-700">Price: {price}</p>
                     <p className="font-semibold text-lg text-gray-700">Purchase-Count Today: {purchaseCount}</p>
                     <p className="font-semibold text-lg text-gray-700">Available in Stock: {availableQuantity}</p>
-                    <p className="font-semibold text-lg text-gray-700">Rating: {rating}</p>
                     <p className="font-semibold text-lg text-gray-700">Description: {description}</p>
-                    <p className="font-semibold text-lg text-gray-700">Delivery Time needed: {deliveryTime}</p>
-                    <p className="font-semibold text-lg text-gray-700">Custom info: {customization}</p>
+                    <p className="font-semibold text-lg text-gray-700">Origin Country: {foodOrigin}</p>
                     <div className="card-actions justify-end">
-                        <Link to={`/purchaseFood/${_id}`}>
+                        <Link to={`/food-purchase/${_id}`}>
                             <button onClick={handlePurchase} className="btn btn-primary px-4 text-lg">Purchase</button>
                         </Link>
                     </div>

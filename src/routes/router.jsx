@@ -7,6 +7,10 @@ import SignIn from "../pages/SignIn/SignIn";
 import PrivateRoute from "./PrivateRoute";
 import FoodDetails from "../pages/FoodDetails/FoodDetails";
 import AllFoods from "../pages/AllFoods/AllFoods";
+import FoodPurchase from "../pages/FoodPurchase/FoodPurchase";
+import AddFood from "../pages/AddFood/AddFood";
+import UpdateFood from "../pages/UpdateFood/UpdateFood";
+import MyFoods from "../pages/MyFoods/MyFoods";
 
 
 
@@ -33,9 +37,28 @@ const router = createBrowserRouter([
                 loader: () => fetch(`http://localhost:5000/foods`)
             },
             {
+                path: 'add-food',
+                element: <PrivateRoute><AddFood></AddFood></PrivateRoute>,
+            },
+            {
+                path: 'update-food/:foodId',
+                element: <PrivateRoute><UpdateFood></UpdateFood></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.foodId}`)
+            },
+            {
                 path: 'foods/:foodId',
                 element: <FoodDetails></FoodDetails>,
                 loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.foodId}`)
+            },
+            {
+                path: 'food-purchase/:foodId',
+                element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.foodId}`)
+            },
+            {
+                path: 'my-foods/:emailId',
+                element: <PrivateRoute><MyFoods></MyFoods></PrivateRoute>,
+                loader: ({ params }) => fetch(`http://localhost:5000/foods/email/${params.emailId}`)
             },
         ]
     },

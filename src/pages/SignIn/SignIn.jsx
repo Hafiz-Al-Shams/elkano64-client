@@ -30,9 +30,11 @@ const SignIn = () => {
                 // console.log('Login successful: ', result.user.email);
 
                 Swal.fire({
+                    position: "center",
+                    icon: "success",
                     title: 'Login Successful',
-                    icon: 'success',
-                    confirmButtonText: 'ok'
+                    showConfirmButton: false,
+                    timer: 2000
                 });
                 // e.target.reset();
                 // navigate(`/myEquipmentsList/${result.user.email}`);
@@ -75,10 +77,6 @@ const SignIn = () => {
             </Helmet>
 
             <div className="hero-content flex-col lg:flex-row-reverse gap-8">
-
-                {/* <div className="text-center lg:text-left w-96">
-                    <Lottie animationData={loginLottieJSON}></Lottie>
-                </div> */}
 
                 <div className="text-center lg:text-left">
                     <h1 className="text-4xl font-bold">Login to continue!</h1>

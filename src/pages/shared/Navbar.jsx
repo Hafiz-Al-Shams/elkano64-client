@@ -9,7 +9,11 @@ import Swal from "sweetalert2";
 const Navbar = () => {
 
 
+
+
     const { user, signOutUser } = useContext(AuthContext);
+
+    console.log(user?.email);
 
     // const navigate = useNavigate();
 
@@ -29,9 +33,13 @@ const Navbar = () => {
             .then(() => {
                 // console.log('user signOut successful');
                 Swal.fire({
-                    title: 'Log out done!',
+                    position: "center",
                     icon: 'warning',
-                    confirmButtonText: 'ok'
+                    title: 'Log out done!',
+                    showConfirmButton: false,
+                    timer: 2000
+
+                    // confirmButtonText: 'ok'
                 });
                 // setProfilePhoto('');
                 // setUserName('');
@@ -47,8 +55,8 @@ const Navbar = () => {
     </>
 
     const links2 = <>
-        <li><NavLink to="/">My Foods</NavLink></li>
-        <li><NavLink to="/">Add food</NavLink></li>
+        <li><NavLink to={`/my-foods/${user?.email}`}>My Foods</NavLink></li>
+        <li><NavLink to="/add-food">Add food</NavLink></li>
         <li><NavLink to="/">My Orders</NavLink></li>
     </>
 
@@ -136,12 +144,12 @@ const Navbar = () => {
                                     </div>
                                     <div><a onClick={handleLogOut} data-tooltip-id="my-tooltip"
                                         data-tooltip-content={userName}
-                                        data-tooltip-place="bottom" className="btn bg-neutral-400/40 text-base-content font-bold">Log Out</a></div>
+                                        data-tooltip-place="bottom" className="btn bg-neutral-400/40 text-base-content">Log Out</a></div>
                                 </div>
                             </>
                             :
                             <>
-                                <NavLink to="/signIn"><button className="btn bg-neutral-400/40 text-base-content font-bold">Login</button></NavLink>
+                                <NavLink to="/signIn"><button className="btn bg-neutral-400/40 text-base-content">Login</button></NavLink>
                             </>
                     }
                     <Tooltip id="my-tooltip" />
