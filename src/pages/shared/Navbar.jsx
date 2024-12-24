@@ -51,13 +51,13 @@ const Navbar = () => {
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/all-foods">All Foods</NavLink></li>
-        <li><NavLink to="/">Gallery</NavLink></li>
+        <li><NavLink to="/gallery">Gallery</NavLink></li>
     </>
 
     const links2 = <>
         <li><NavLink to={`/my-foods/${user?.email}`}>My Foods</NavLink></li>
         <li><NavLink to="/add-food">Add food</NavLink></li>
-        <li><NavLink to="/">My Orders</NavLink></li>
+        <li><NavLink to="/my-orders">My Orders</NavLink></li>
     </>
 
 

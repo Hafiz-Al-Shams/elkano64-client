@@ -12,7 +12,6 @@ const TopFoods = () => {
         fetch('http://localhost:5000/fixedFoods')
             .then(res => res.json())
             .then(data => {
-                // console.log(data);
                 setTopFoods(data);
             })
     }, [])
