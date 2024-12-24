@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 
@@ -9,10 +10,12 @@ const Banner = () => {
                 <div className="text-center mx-auto space-y-3">
                     <h1 className="font-bold text-6xl text-white">Fresh Homemade Dishes</h1>
                     <h4 className="font-semibold text-2xl text-gray-300/90 pb-4">Our chefs cook with the freshest and highest quality ingredients. <br />We serve foods simply full of the finest tastes.</h4>
-                    <button
-                        className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-6 py-3 rounded-lg font-medium transition duration-300">
-                        Shop The Hottest Foods
-                    </button>
+                    <Link to="/all-foods">
+                        <button
+                            className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Shop The Hottest Foods
+                        </button>
+                    </Link>
                 </div>
                 <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                     <a href="#slide3" className="btn btn-circle">❮</a>
@@ -25,10 +28,12 @@ const Banner = () => {
                 <div className="text-center mx-auto space-y-3">
                     <h1 className="font-bold text-6xl text-white">Ingredients Grown on Our Farms</h1>
                     <h4 className="font-semibold text-2xl text-gray-300/90 pb-4">Enjoy the food experience mostly from our farms, through <br />our kitchen, and to your fork.</h4>
-                    <button
-                        className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-6 py-3 rounded-lg font-medium transition duration-300">
-                        Shop The Hottest Foods
-                    </button>
+                    <Link to="/all-foods">
+                        <button
+                            className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Shop The Hottest Foods
+                        </button>
+                    </Link>
                 </div>
                 <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                     <a href="#slide1" className="btn btn-circle">❮</a>
@@ -41,10 +46,12 @@ const Banner = () => {
                 <div className="text-center mx-auto space-y-3">
                     <h1 className="font-bold text-6xl text-white">We Take Care with Love</h1>
                     <h4 className="font-semibold text-2xl text-gray-300/90 pb-4">We are passionate about making amazing recipes. We <br />serve foods simply full of the finest tastes.</h4>
-                    <button
-                        className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-6 py-3 rounded-lg font-medium transition duration-300">
-                        Shop The Hottest Foods
-                    </button>
+                    <Link to="/all-foods">
+                        <button
+                            className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Shop The Hottest Foods
+                        </button>
+                    </Link>
                 </div>
                 <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                     <a href="#slide2" className="btn btn-circle">❮</a>

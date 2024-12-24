@@ -31,10 +31,10 @@ const AddFood = () => {
         const userEmail = form.userEmail.value;
 
         const newFood = { name, category, description, price, foodOrigin, availableQuantity, photo, userName, userEmail };
-        console.log(newFood);
+        // console.log(newFood);
 
         // // sending data to the server
-        fetch('http://localhost:5000/foods', {
+        fetch('https://elkano64-server.vercel.app/foods', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -43,9 +43,9 @@ const AddFood = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if (data.insertedId) {
-                    console.log('successfully added');
+                    // console.log('successfully added');
                     Swal.fire({
                         title: 'Success!',
                         text: 'Food added successfully',

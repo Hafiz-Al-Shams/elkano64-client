@@ -41,7 +41,7 @@ const UpdateFood = () => {
         const foodOrigin = form.foodOrigin.value;
 
         const updatedFood = { name, category, description, price, foodOrigin, availableQuantity, photo };
-        console.log(updatedFood);
+        // console.log(updatedFood);
 
         // extra
         if (user.email !== userEmail) {
@@ -58,7 +58,7 @@ const UpdateFood = () => {
         // extra
 
         // // sending data to the server
-        fetch(`http://localhost:5000/foods/${_id}`, {
+        fetch(`https://elkano64-server.vercel.app/foods/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ const UpdateFood = () => {
                 // console.log(data);
 
                 if (data.modifiedCount > 0) {
-                    console.log('successfully updated');
+                    // console.log('successfully updated');
                     Swal.fire({
                         title: 'Success!',
                         text: 'Food updated successfully',

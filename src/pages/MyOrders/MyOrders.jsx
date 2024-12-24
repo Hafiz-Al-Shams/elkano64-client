@@ -12,10 +12,10 @@ const MyOrders = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/my-orders?email=${user.email}`)
+        fetch(`https://elkano64-server.vercel.app/my-orders?email=${user.email}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 setOrders(data);
             })
     }, [user.email])
@@ -34,12 +34,12 @@ const MyOrders = () => {
             if (result.isConfirmed) {
                 // console.log('delete confirmed');
 
-                fetch(`http://localhost:5000/my-orders/${_id}`, {
+                fetch(`https://elkano64-server.vercel.app/my-orders/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
                     .then(data => {
-                        console.log(data);
+                        // console.log(data);
                         if (data.deletedCount > 0) {
                             Swal.fire({
                                 title: "Deleted!",

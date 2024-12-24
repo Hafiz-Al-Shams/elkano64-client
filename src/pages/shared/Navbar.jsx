@@ -13,7 +13,7 @@ const Navbar = () => {
 
     const { user, signOutUser } = useContext(AuthContext);
 
-    console.log(user?.email);
+    // console.log(user?.email);
 
     // const navigate = useNavigate();
 

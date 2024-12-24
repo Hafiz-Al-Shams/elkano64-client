@@ -12,11 +12,11 @@ const FoodPurchase = () => {
 
     const food = useLoaderData();
 
-    console.log(food.userEmail);
+    // console.log(food.userEmail);
 
     const { user } = useContext(AuthContext);
 
-    console.log(user?.email);
+    // console.log(user?.email);
 
     const navigate = useNavigate();
 
@@ -37,7 +37,7 @@ const FoodPurchase = () => {
         const buyerEmail = form.buyerEmail.value;
 
         const newPurchase = { name, totalPrice, numQuantity, buyerName, buyerEmail };
-        console.log(newPurchase);
+        // console.log(newPurchase);
 
 
         // extra
@@ -53,7 +53,7 @@ const FoodPurchase = () => {
 
 
         // sending data to the server
-        fetch('http://localhost:5000/purchases', {
+        fetch('https://elkano64-server.vercel.app/purchases', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -62,9 +62,9 @@ const FoodPurchase = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 if (data.insertResult.insertedId) {
-                    console.log('successfully added');
+                    // console.log('successfully added');
                     Swal.fire({
                         position: "center",
                         icon: "success",
