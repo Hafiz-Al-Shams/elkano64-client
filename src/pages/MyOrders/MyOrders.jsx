@@ -59,7 +59,7 @@ const MyOrders = () => {
 
 
     return (
-        <div className="my-5 mx-auto max-w-4xl text-center">
+        <div className="my-5 mx-auto max-w-5xl text-center">
             <Helmet>
                 <title>Elkano64 - My Orders</title>
             </Helmet>
@@ -73,7 +73,7 @@ const MyOrders = () => {
                         <th>Name</th>
                         <th>Order Quantity</th>
                         <th>Total Price ($)</th>
-                        <th>Order Date & Time</th>
+                        <th>Purchase Date & Time</th>
                         <th>Actions</th>
                     </tr>
                 </thead>

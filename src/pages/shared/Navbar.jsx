@@ -94,7 +94,7 @@ const Navbar = () => {
                             {links}
                         </ul>
                     </div>
-                    <Link to="/" className="text-3xl font-semibold">Elkano64</Link>
+                    <Link to="/" className="text-2xl font-bold">Elkano64</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 space-x-4 font-semibold">
@@ -144,7 +144,7 @@ const Navbar = () => {
                                     </div>
                                     <div><a onClick={handleLogOut} data-tooltip-id="my-tooltip"
                                         data-tooltip-content={userName}
-                                        data-tooltip-place="bottom" className="btn bg-neutral-400/40 text-base-content">Log Out</a></div>
+                                        data-tooltip-place="bottom-start" className="btn bg-neutral-400/40 text-base-content">Log Out</a></div>
                                 </div>
                             </>
                             :
