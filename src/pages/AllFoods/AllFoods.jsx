@@ -16,7 +16,7 @@ const AllFoods = () => {
     const [debounceTimer, setDebounceTimer] = useState(null);
 
     const handleSearch = async (query) => {
-        // console.log("Search text:", query);
+
         try {
             const response = await fetch(`https://elkano64-server.vercel.app/searchFoods?search=${encodeURIComponent(query)}`);
             const data = await response.json();
@@ -61,20 +61,9 @@ const AllFoods = () => {
             <div className="flex justify-end">
 
                 <label className="input input-bordered input-primary flex items-center gap-2 mb-8">
-
-                    {/*  onClick={(e) => {
-                    // Ensuring that clicking the SVG triggers the search, not the input field
-                    if (e.target.tagName === "svg" || e.target.tagName === "path") {
-                        handleSearch();
-                    }
-                }} */}
-
                     <input type="text" name="search" className="grow" placeholder="Search" value={searchValue}
                         onChange={handleInputChange} // Real-time input handling
                     />
-
-                    {/* onChange={(e) => setSearchValue(e.target.value)}
-                        onKeyDown={handleKeyDown} */}
 
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -93,26 +82,26 @@ const AllFoods = () => {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-24 mb-28">
                 {
                     resultFoods.map(food => (
-                        <div key={food._id} className="card card-compact bg-base-200/50 p-3.5 w-96 shadow-xl">
+                        <div key={food._id} className="card card-compact bg-base-200/80 p-3.5 w-96 shadow-xl">
                             <figure>
                                 <img
-                                    className="h-52 p-1.5"
+                                    className="p-4 rounded-3xl"
                                     src={food.photo}
                                     alt="food" />
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-bold">{food.name}</h2>
-                                <p className="font-semibold text-lg text-gray-700">Category: {food.category}</p>
-                                <p className="font-semibold text-lg text-gray-700">Price: {food.price}</p>
+                                <p className="font-medium text-lg text-gray-700">Category: {food.category}</p>
+                                <p className="font-medium text-lg text-gray-700">Price: {food.price}</p>
 
 
-                                <p className="font-semibold text-lg text-gray-700">Purchase-Count Today: {food.purchaseCount}</p>
+                                <p className="font-medium text-lg text-gray-700">Purchase-Count Today: {food.purchaseCount}</p>
 
 
 
-                                <p className="font-semibold text-lg text-gray-700">Available Quantity: {food.availableQuantity}</p>
-                                <p className="font-semibold text-lg text-gray-700">Description: {food.description}</p>
-                                <p className="font-semibold text-lg text-gray-700">Origin: {food.foodOrigin}</p>
+                                <p className="font-medium text-lg text-gray-700">Available Quantity: {food.availableQuantity}</p>
+                                <p className="font-medium text-lg text-gray-700">Description: {food.description}</p>
+                                <p className="font-medium text-lg text-gray-700">Origin: {food.foodOrigin}</p>
                                 <div className="card-actions justify-end mt-2">
                                     <Link to={`/foods/${food._id}`}>
                                         <button className="btn btn-primary px-4 text-lg">Details</button>

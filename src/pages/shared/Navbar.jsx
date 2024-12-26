@@ -8,9 +8,6 @@ import Swal from "sweetalert2";
 
 const Navbar = () => {
 
-
-
-
     const { user, signOutUser } = useContext(AuthContext);
 
     // console.log(user?.email);
@@ -121,15 +118,6 @@ const Navbar = () => {
                         user ?
                             <>
                                 <div className="flex justify-center items-center gap-3">
-
-                                    {/* <p className="text-sm font-bold text-center text-gray-800">Current <br />User</p>
-                                    <p className="text-lg font-bold">{userName}</p> */}
-
-                                    {/* <div><img data-tooltip-id="my-tooltip"
-                                        data-tooltip-content={userName}
-                                        data-tooltip-place="bottom-end" className="w-11 rounded-full cursor-pointer" src={profilePhoto} alt="photo" /></div> */}
-
-
 
                                     <div className="dropdown dropdown-left">
                                         <div tabIndex={0} role="button" className="btn bg-transparent rounded-full">

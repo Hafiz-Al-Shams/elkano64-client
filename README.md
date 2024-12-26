@@ -1,11 +1,11 @@
 # Elkano64 - Elite Restaurant Management Website
 
-## Live link: [https://elkano-64.web.app/](https://elkano-64.web.app/)
+## Live link: [https://elkano64-0be36d.netlify.app/](https://elkano64-0be36d.netlify.app/)
 
 
 ## Project Purpose
 
-Our Restaurant Management website is designed to revolutionize the dining experience by bridging the gap between customers and staff through seamless digital interaction. Built on the robust MERN stack, it enhances the restaurant's online presence, simplifies internal operations, and creates a user-friendly platform that elevates customer engagement and operational efficiency.
+My Restaurant Management website is designed to revolutionize the dining experience by bridging the gap between customers and staff through seamless digital interaction. Built on the robust MERN stack, it enhances the restaurant's online presence, simplifies internal operations, and creates a user-friendly platform that elevates customer engagement and operational efficiency.
 
 
 ### **List of Fundamental Concepts implemented in the Project**

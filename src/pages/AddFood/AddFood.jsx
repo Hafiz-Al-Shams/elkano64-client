@@ -74,7 +74,7 @@ const AddFood = () => {
                 <div className="flex justify-center items-center gap-12 pt-6 pb-8">
 
 
-                    <h1 className="text-5xl font-bold">Add New FooD here!</h1>
+                    <h1 className="text-5xl font-bold pt-8">Add New FooD here!</h1>
 
                 </div>
 

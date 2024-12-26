@@ -21,10 +21,6 @@ const UpdateFood = () => {
 
     // console.log(userEmail);
 
-
-
-
-
     const handleUpdateFood = e => {
         e.preventDefault();
 
@@ -43,7 +39,6 @@ const UpdateFood = () => {
         const updatedFood = { name, category, description, price, foodOrigin, availableQuantity, photo };
         // console.log(updatedFood);
 
-        // extra
         if (user.email !== userEmail) {
             Swal.fire({
                 title: 'Invalid Authority',
@@ -53,9 +48,6 @@ const UpdateFood = () => {
             });
             return;
         }
-
-        // console.log('successsssssssssssssssssssssssssssssssssss');
-        // extra
 
         // // sending data to the server
         fetch(`https://elkano64-server.vercel.app/foods/${_id}`, {
@@ -95,7 +87,7 @@ const UpdateFood = () => {
 
                 <div className="flex justify-center items-center gap-12 pt-6 pb-8">
 
-                    <h1 className="text-5xl font-bold">Update Your fooD here!</h1>
+                    <h1 className="text-5xl font-bold pt-8">Update Your fooD here!</h1>
 
                 </div>
 
