@@ -51,6 +51,36 @@ const FoodPurchase = () => {
             return;
         }
 
+        else if (food.availableQuantity < 1) {
+            Swal.fire({
+                title: 'Food Not Available Today!',
+                // text: 'You can not Purchase food-items Added by You!',
+                icon: 'error',
+                confirmButtonText: 'understood'
+            });
+            return;
+        }
+
+        else if (numQuantity < 1) {
+            Swal.fire({
+                title: 'invalid quantity!!!',
+                // text: 'You can not Purchase food-items Added by You!',
+                icon: 'error',
+                confirmButtonText: 'try again'
+            });
+            return;
+        }
+
+        else if (numQuantity > food.availableQuantity) {
+            Swal.fire({
+                title: 'Sorry!! insufficient quantity!',
+                text: 'You can not Purchase more than available quantity!',
+                icon: 'error',
+                confirmButtonText: 'understood'
+            });
+            return;
+        }
+
 
         // sending data to the server
         fetch('https://elkano64-server.vercel.app/purchases', {
