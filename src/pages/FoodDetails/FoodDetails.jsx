@@ -34,7 +34,7 @@ const FoodDetails = () => {
 
             <div className="flex justify-center items-center gap-7 pt-6 pb-2">
 
-                <h1 className="text-5xl font-bold">{name}</h1>
+                <h1 className="text-5xl font-bold">{name} Details</h1>
             </div>
 
             <div className="card lg:card-side bg-base-200/20 shadow-xl w-8/12 mx-auto mt-1 p-2 mb-8">
