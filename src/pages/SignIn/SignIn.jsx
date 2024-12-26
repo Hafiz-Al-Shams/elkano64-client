@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Helmet } from "react-helmet-async";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext/AuthContext";
 import Swal from "sweetalert2";
 import SocialLogin from "../shared/SocialLogin";
@@ -12,11 +12,6 @@ const SignIn = () => {
 
     const { signInUser } = useContext(AuthContext);
     const navigate = useNavigate();
-
-    // const location = useLocation();
-    // console.log('in signin page', location);
-    // const from = location.state || '/';
-
 
     const handleSignIn = e => {
         e.preventDefault();
@@ -36,22 +31,8 @@ const SignIn = () => {
                     showConfirmButton: false,
                     timer: 2000
                 });
-                // e.target.reset();
-                // navigate(`/myEquipmentsList/${result.user.email}`);
-
-                // const user = { email: result.user.email };
-                // axios.post('https://elkano64-server.vercel.app/jwt', user, { withCredentials: true })
-                //     .then(res => console.log(res.data))
-
-
-
-                // Swal.fire({
-                //     title: 'Login Successful',
-                //     icon: 'success',
-                //     confirmButtonText: 'ok'
-                // });
-                // form.reset();
-                // navigate(from);
+                e.target.reset();
+                navigate(`/my-orders`);
             })
             .catch(error => {
                 console.log('ERROR from Firebase', error.message);

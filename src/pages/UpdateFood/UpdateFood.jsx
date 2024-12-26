@@ -78,7 +78,7 @@ const UpdateFood = () => {
                         confirmButtonText: 'Cool'
                     });
                     // form.reset();
-                    // navigate(`/myEquipmentsList/${user.email}`);
+                    navigate(`/my-foods/${user.email}`);
                 }
             })
 

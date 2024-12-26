@@ -1,17 +1,16 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import SocialLogin from "../shared/SocialLogin";
 import AuthContext from "../../context/AuthContext/AuthContext";
 import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-import { Tooltip } from "react-tooltip";
 
 
 
 const Register = () => {
 
 
-    const { user, createUser, updateUserProfile, signOutUser } = useContext(AuthContext);
+    const { createUser, updateUserProfile, signOutUser } = useContext(AuthContext);
 
     const navigate = useNavigate();
 

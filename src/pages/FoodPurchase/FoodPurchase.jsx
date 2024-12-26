@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import AuthContext from "../../context/AuthContext/AuthContext";
 import Swal from "sweetalert2";
@@ -107,7 +107,7 @@ const FoodPurchase = () => {
                         // timer: 2000
                     });
                     // form.reset();
-                    // navigate('/all-foods');
+                    navigate('/my-orders');
                 }
             })
 

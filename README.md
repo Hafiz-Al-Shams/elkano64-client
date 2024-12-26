@@ -1,11 +1,14 @@
-## Project name:
-
 # Elkano64 - Elite Restaurant Management Website
 
-## Live link of the deployed Project: [https://elkano-64.web.app/](https://elkano-64.web.app/)
+## Live link: [https://elkano-64.web.app/](https://elkano-64.web.app/)
 
 
-### **List of Fundamental concepts used in the project**
+## Project Purpose
+
+Our Restaurant Management website is designed to revolutionize the dining experience by bridging the gap between customers and staff through seamless digital interaction. Built on the robust MERN stack, it enhances the restaurant's online presence, simplifies internal operations, and creates a user-friendly platform that elevates customer engagement and operational efficiency.
+
+
+### **List of Fundamental Concepts implemented in the Project**
 
 - Client site & Server site distinction
 - CRUD operation
@@ -14,10 +17,10 @@
 - State Management
 
 
-### **MongoDB is used for handling and managing data in this project:**
+### **MongoDB is used for handling and managing data in this Project**
 
 
-### **8 key features of this project:**
+## Key Features
 
 - Firebase Authentication system: Email-Password & GOOGLE login
 
@@ -31,12 +34,19 @@
 
 - Showing Order list by the current logged in user by using email query on server on purchases collections
 
-- Sorting Foods on HomePage by purchaseCount (descending order)
+- Sorting & limiting Foods on HomePage by purchaseCount (descending order)
 
 - Searching Foods on All Foods Page by foodName
 
 
-### **NPM package used in this Project:**
+## Technologies Used  
+- **MongoDB**: For scalable and flexible database management.  
+- **Express.js**: Backend framework for building APIs and managing routes.  
+- **React.js**: Frontend library for creating interactive user interfaces.  
+- **Node.js**: Runtime for executing server-side JavaScript.
+
+
+### **NPM package used in this Project**
 
 - react-router-dom
 - sweetalert2
