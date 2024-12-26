@@ -14,7 +14,6 @@ const Navbar = () => {
     const { user, signOutUser } = useContext(AuthContext);
 
     // console.log(user?.email);
-
     // const navigate = useNavigate();
 
     const [profilePhoto, setProfilePhoto] = useState('');

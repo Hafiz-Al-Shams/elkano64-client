@@ -102,8 +102,9 @@ const AllFoods = () => {
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title text-2xl font-bold">{food.name}</h2>
-                                <p className="font-semibold text-lg text-gray-700">Price: {food.price}</p>
                                 <p className="font-semibold text-lg text-gray-700">Category: {food.category}</p>
+                                <p className="font-semibold text-lg text-gray-700">Price: {food.price}</p>
+
 
                                 <p className="font-semibold text-lg text-gray-700">Purchase-Count Today: {food.purchaseCount}</p>
 
