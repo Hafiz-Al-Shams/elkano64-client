@@ -101,10 +101,10 @@ const Register = () => {
                     <title>Elkano64 - Register</title>
                 </Helmet>
 
-                <div className="hero-content flex-col lg:flex-row-reverse gap-8">
+                <div className="hero-content flex-col lg:flex-row gap-8">
 
                     <div className="text-center lg:text-left">
-                        <h1 className="text-4xl font-bold">WELCOME! Register Here</h1>
+                        <h1 className="text-4xl font-bold">Please Sign Up</h1>
                     </div>
 
                     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -141,7 +141,7 @@ const Register = () => {
                         <div className="text-center">
                             <p>Already have an account?</p>
                             <Link to="/signIn">
-                                <button className="mt-1.5 btn px-8 font-bold text-black bg-yellow-100">Login</button>
+                                <button className="mt-1.5 btn btn-accent px-8">Login</button>
                             </Link>
                         </div>
                         <SocialLogin></SocialLogin>

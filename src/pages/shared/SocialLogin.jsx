@@ -30,7 +30,7 @@ const SocialLogin = () => {
     return (
         <div className='m-4'>
             <div className="divider">OR</div>
-            <button onClick={handleGoogleSignIn} className='btn'>Sign in with Google</button>
+            <button onClick={handleGoogleSignIn} className='btn'>Login with Google</button>
         </div>
     );
 };

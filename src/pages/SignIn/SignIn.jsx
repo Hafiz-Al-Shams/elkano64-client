@@ -76,10 +76,10 @@ const SignIn = () => {
                 <title>Elkano64 - Login</title>
             </Helmet>
 
-            <div className="hero-content flex-col lg:flex-row-reverse gap-8">
+            <div className="hero-content flex-col lg:flex-row gap-8">
 
                 <div className="text-center lg:text-left">
-                    <h1 className="text-4xl font-bold">Login to continue!</h1>
+                    <h1 className="text-4xl font-bold">Login Here!</h1>
                 </div>
 
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -107,7 +107,7 @@ const SignIn = () => {
                     <div className="text-center">
                         <p>New to this website?</p>
                         <Link to="/register">
-                            <button className="mt-1.5 btn btn-success text-white">Create new account</button>
+                            <button className="mt-1.5 btn btn-success font-normal text-white">Create new account</button>
                         </Link>
                     </div>
                     <SocialLogin></SocialLogin>

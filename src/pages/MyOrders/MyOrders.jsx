@@ -79,11 +79,11 @@ const MyOrders = () => {
                 </thead>
                 <tbody>
                     {orders.map((order, index) => (
-                        <tr key={order._id} className="orders-table-row">
+                        <tr key={order._id} className="orders-table-row bg-gray-200 hover:bg-indigo-200 transition duration-100">
                             <td>{index + 1}</td>
-                            <td>{order.name}</td>
+                            <td className="py-2 px-4 border-b border-gray-700">{order.name}</td>
                             <td className="unique">{order.numQuantity}</td>
-                            <td>{order.totalPrice}</td>
+                            <td className="py-2 px-4 border-b border-gray-700">{order.totalPrice}</td>
                             <td>{order.buyingDate}</td>
                             <td>
                                 <button onClick={() => handleDelete(order._id)} className="btn btn-primary btn-sm">Delete</button>
