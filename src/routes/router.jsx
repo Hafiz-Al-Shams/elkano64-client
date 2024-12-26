@@ -12,6 +12,7 @@ import AddFood from "../pages/AddFood/AddFood";
 import UpdateFood from "../pages/UpdateFood/UpdateFood";
 import MyFoods from "../pages/MyFoods/MyFoods";
 import MyOrders from "../pages/MyOrders/MyOrders";
+import Gallery from "../pages/Gallery/Gallery";
 
 
 
@@ -31,6 +32,11 @@ const router = createBrowserRouter([
             {
                 path: 'signIn',
                 element: <SignIn></SignIn>,
+            },
+            {
+                path: 'gallery',
+                element: <Gallery></Gallery>,
+                loader: () => fetch(`https://elkano64-server.vercel.app/foods`)
             },
             {
                 path: 'all-foods',
