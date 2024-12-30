@@ -80,7 +80,7 @@ const UpdateFood = () => {
     return (
         <div>
             <Helmet>
-                <title>Elkano64 - Update Food</title>
+                <title>Elkano64 - Update Food Here</title>
             </Helmet>
 
             <div className='lg:w-3/4 mx-auto mb-28'>
