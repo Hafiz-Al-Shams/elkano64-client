@@ -63,6 +63,8 @@ const AuthProvider = ({ children }) => {
 
     }
 
+    console.log(user);
+
 
 
     return (
