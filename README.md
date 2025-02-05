@@ -1,6 +1,6 @@
 # Elkano64 - Elite Restaurant Management Website
 
-![Elkano64 Screenshot](https://i.ibb.co.com/C5QmRjGS/Screenshot-6646.png)  
+![Elkano64 Screenshot](https://i.ibb.co.com/Z5G36gZ/Screenshot-6646.png)  
 
 ## Live Project  
 🔗 [Elkano64 Live](https://elkano64-0be36d.netlify.app/)  
