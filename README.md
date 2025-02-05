@@ -1,6 +1,3 @@
-Here is the modified `README.md` for your new project, following the format from `CureMedix` while keeping all relevant information intact:
-
-```markdown
 # Elkano64 - Elite Restaurant Management Website
 
 ![Elkano64 Screenshot](https://i.ibb.co.com/C5QmRjGS/Screenshot-6646.png)  
