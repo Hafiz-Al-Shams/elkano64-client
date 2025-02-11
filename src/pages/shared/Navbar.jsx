@@ -67,46 +67,45 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="sticky top-0 z-10 navbar font-medium py-3 px-10 bg-base-300 text-base-content">
+            <div className="sticky top-0 z-10 navbar font-medium md:py-0.5 lg:py-3 px-2.5 md:px-12 lg:px-24 bg-base-300 text-base-content">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-5 w-5"
+                                className="h-6 w-6"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor">
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-2">
+                            className="menu menu-xs md:menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-2">
                             {links}
                         </ul>
                     </div>
-                    <Link to="/" className="text-2xl font-bold">Elkano64</Link>
+                    <Link to="/" className="text-sm md:text-xl lg:text-2xl font-bold">Elkano64</Link>
                 </div>
+
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 space-x-4 font-semibold">
+                    <ul className="menu menu-horizontal px-1 space-x-2 md:space-x-4 font-semibold">
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end space-x-8">
+
+                <div className="navbar-end space-x-4 md:space-x-6 lg:space-x-8">
 
 
-                    <div className="">
+                    {/* theme change */}
+                    <div className="w-14 sm:w-16 md:w-20">
                         <select
-                            className="select select-bordered w-24 text-xs"
+                            className="w-full text-[9px] sm:text-[10px] md:text-xs px-1 py-0 lg:py-3 h-auto min-h-7 sm:min-h-8 border border-gray-300 rounded-md"
                             value={theme}
                             onChange={(e) => handleThemeChange(e.target.value)}
                         >
-                            <option value="light" >Light</option>
+                            <option value="light">Light</option>
                             <option value="dark">Dark</option>
                             <option value="dim">Dim</option>
                             <option value="luxury">Luxury</option>
@@ -114,34 +113,45 @@ const Navbar = () => {
                     </div>
 
 
+
+
                     {
                         user ?
-                            <>
-                                <div className="flex justify-center items-center gap-3">
-
-                                    <div className="dropdown dropdown-left">
-                                        <div tabIndex={0} role="button" className="btn bg-transparent rounded-full">
-                                            <img className="w-11 rounded-full cursor-pointer" src={profilePhoto} alt="photo" />
-                                        </div>
-                                        <ul
-                                            tabIndex={0}
-                                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-4 shadow space-y-2">
-                                            {links2}
-                                        </ul>
+                            <div className="flex items-center gap-2 md:gap-3">
+                                <div className="dropdown dropdown-end">
+                                    <div tabIndex={0} role="button" className="btn bg-transparent rounded-full p-0">
+                                        <img
+                                            className="w-7 min-w-7 sm:w-6 md:w-8 lg:w-10 rounded-full cursor-pointer"
+                                            src={profilePhoto}
+                                            alt="photo"
+                                        />
                                     </div>
-                                    <div><a onClick={handleLogOut} data-tooltip-id="my-tooltip"
-                                        data-tooltip-content={userName}
-                                        data-tooltip-place="bottom-start" className="btn bg-neutral-400/40 text-base-content">Log Out</a></div>
+
+                                    <ul
+                                        tabIndex={0}
+                                        className="menu menu-xs md:menu-sm lg:menu-md dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 md:w-52 p-3 md:p-4 shadow space-y-2">
+                                        {links2}
+                                    </ul>
                                 </div>
-                            </>
+                                <a onClick={handleLogOut} data-tooltip-id="my-tooltip"
+                                    data-tooltip-content={userName}
+                                    data-tooltip-place="bottom-start"
+                                    className="btn btn-xs md:btn-sm lg:btn-md bg-neutral-400/40 text-base-content text-[8px] md:text-xs lg:text-sm px-1.5 md:px-3 lg:px-4">
+                                    Log Out
+                                </a>
+                            </div>
                             :
-                            <>
-                                <NavLink to="/signIn"><button className="btn bg-neutral-400/40 text-base-content">Login</button></NavLink>
-                            </>
+                            <NavLink to="/signIn">
+                                <button className="btn btn-xs md:btn-sm lg:btn-md bg-neutral-400/40 text-base-content text-[9px] md:text-xs lg:text-sm px-2 md:px-3 lg:px-4">
+                                    Login
+                                </button>
+                            </NavLink>
                     }
+
                     <Tooltip id="my-tooltip" />
                 </div>
             </div>
+
         </>
     );
 };
