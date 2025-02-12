@@ -48,7 +48,7 @@ const TopFoods = () => {
                     ))
                 }
             </div>
-            <div className="text-center pb-10 md:pb-11 lg:pb-24">
+            <div className="text-center pb-10 md:pb-11 lg:pb-20">
                 <Link to="/all-foods">
                     <button className="btn btn-outline btn-sm md:btn-md lg:btn-lg font-semibold">View All</button>
                 </Link>
