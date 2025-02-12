@@ -46,7 +46,7 @@ const Register = () => {
 
             Swal.fire({
                 // title: 'Error!',
-                text: 'at least One Number, One Uppercase & One Lowercase is needed',
+                text: 'at least One Number, One Uppercase & One Lowercase is needed [DO NOT input Special Character!!!!]',
                 icon: 'error',
                 confirmButtonText: 'Try Again'
             });
