@@ -16,7 +16,9 @@ const Home = () => {
 
             <Banner></Banner>
             <FixedBadge></FixedBadge>
-            <TopFoods></TopFoods>
+            <div className="bg-base-200/40">
+                <TopFoods></TopFoods>
+            </div>
             <Review></Review>
             <Events></Events>
         </>
