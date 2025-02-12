@@ -31,9 +31,9 @@ const Review = () => {
 
     return (
         <div>
-            <section className="bg-neutral-100 py-20 mb-20">
+            <section className="bg-neutral-100 pt-7 md:pt-8 lg:pt-20 pb-10 md:pb-14 lg:pb-24">
                 <div className="max-w-6xl mx-auto px-6">
-                    <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
+                    <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-gray-800 text-center mb-4 md:mb-6 lg:mb-8">
                         Customer ReViews
                     </h2>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
