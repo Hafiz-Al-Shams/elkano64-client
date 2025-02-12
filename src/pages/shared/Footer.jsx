@@ -1,13 +1,13 @@
 
 const Footer = () => {
     return (
-        <footer className="footer footer-center rounded p-10 bg-neutral-950 text-neutral-content mt-16">
+        <footer className="footer footer-center pt-11 lg:pt-14 pb-10 px-10 bg-neutral-950 text-neutral-content">
             <nav className="grid grid-flow-col gap-4">
-                <a className="link link-hover">About us</a>
-                <a className="link link-hover">Contact</a>
-                <a className="link link-hover">Jobs</a>
-                <a className="link link-hover">Blog</a>
-                <a className="link link-hover">Events</a>
+                <a className="link link-hover text-xs md:text-base">About us</a>
+                <a className="link link-hover text-xs md:text-base">Contact</a>
+                <a className="link link-hover text-xs md:text-base">Jobs</a>
+                <a className="link link-hover text-xs md:text-base">Blog</a>
+                <a className="link link-hover text-xs md:text-base">Events</a>
             </nav>
             <nav>
                 <div className="grid grid-flow-col gap-4">
@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
             </nav>
             <aside>
-                <p>Copyright © {new Date().getFullYear()} - Elkano64. All rights reserved.</p>
+                <p className="text-[10px] md:text-xs lg:text-sm">Copyright © {new Date().getFullYear()} - Elkano64. All rights reserved.</p>
             </aside>
         </footer>
     );
