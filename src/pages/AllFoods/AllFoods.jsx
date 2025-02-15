@@ -74,6 +74,7 @@ const AllFoods = () => {
                     </svg>
                 </label>
 
+
                 {/* Sorting Dropdown */}
                 <select
                     className="select select-bordered w-48 text-lg"
