@@ -83,7 +83,7 @@ const FoodPurchase = () => {
 
 
         // sending data to the server
-        fetch('https://elkano64-server.vercel.app/purchases', {
+        fetch('http://localhost:5000/purchases', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

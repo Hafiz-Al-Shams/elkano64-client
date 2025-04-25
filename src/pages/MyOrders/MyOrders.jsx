@@ -12,7 +12,7 @@ const MyOrders = () => {
 
 
     useEffect(() => {
-        fetch(`https://elkano64-server.vercel.app/my-orders?email=${user.email}`)
+        fetch(`http://localhost:5000/my-orders?email=${user.email}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data);
@@ -34,7 +34,7 @@ const MyOrders = () => {
             if (result.isConfirmed) {
                 // console.log('delete confirmed');
 
-                fetch(`https://elkano64-server.vercel.app/my-orders/${_id}`, {
+                fetch(`http://localhost:5000/my-orders/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

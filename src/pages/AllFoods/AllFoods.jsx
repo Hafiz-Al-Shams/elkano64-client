@@ -17,7 +17,7 @@ const AllFoods = () => {
 
     const handleSearch = async (query) => {
         try {
-            const response = await fetch(`https://elkano64-server.vercel.app/searchFoods?search=${encodeURIComponent(query)}`);
+            const response = await fetch(`http://localhost:5000/searchFoods?search=${encodeURIComponent(query)}`);
             const data = await response.json();
             setResultFoods(data);
         } catch (error) {
