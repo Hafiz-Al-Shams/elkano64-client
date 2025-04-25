@@ -34,7 +34,7 @@ const AddFood = () => {
         // console.log(newFood);
 
         // // sending data to the server
-        fetch('http://localhost:5000/foods', {
+        fetch('https://elkano64-server.vercel.app/foods', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

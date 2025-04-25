@@ -12,7 +12,7 @@ const Services = () => {
             <div className="">
                 <h3 className="text-center font-bold text-xl md:text-2xl lg:text-3xl mt-8 md:mt-11 lg:mt-20 mb-0.5 md:mb-2.5 lg:mb-5 px-2.5 underline">Why Choose Our Restaurant?</h3>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 md:gap-12 lg:gap-16 pt-8 bg-base-100 lg:pb-6 mb-10 lg:mb-16 px-4 md:px-12 border-b-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 md:gap-12 lg:gap-16 pt-8 bg-base-100 lg:pb-6 mb-10 lg:mb-16 px-4 md:px-12">
                     <div className="flex flex-col items-center space-y-2">
                         <h3 className="md:text-lg lg:text-xl font-semibold lg:pb-2">Fast & Fresh Delivery</h3>
                         <div className="text-4xl text-orange-600">

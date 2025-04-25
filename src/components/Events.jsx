@@ -18,7 +18,7 @@ const Events = () => {
     return (
         <div className="bg-gray-900 text-white pb-9 md:pb-12 lg:pb-20 pt-7 md:pt-10 lg:pt-16 px-6">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl lg:text-3xl font-semibold text-center mb-6 lg:mb-8">Upcoming Events</h2>
+                <h2 className="text-2xl lg:text-3xl font-semibold text-center mb-6 lg:mb-8 underline">Upcoming Events</h2>
                 <div className="flex flex-col md:flex-row items-center gap-8 bg-gray-800 p-6 rounded-lg">
                     <div className="flex-1">
                         <p className="text-sm text-pink-400 mb-2">15/03/2025 — 21/03/2025</p>

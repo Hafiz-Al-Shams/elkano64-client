@@ -9,7 +9,7 @@ const TopFoods = () => {
     const [topFoods, setTopFoods] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/fixedFoods')
+        fetch('https://elkano64-server.vercel.app/fixedFoods')
             .then(res => res.json())
             .then(data => {
                 setTopFoods(data);
@@ -34,10 +34,10 @@ const TopFoods = () => {
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title md:text-xl lg:text-2xl md:font-semibold lg:font-bold">{food.name}</h2>
-                                <p className="font-medium text-xs lg:text-lg text-base-content">Price: {food.price}</p>
+                                <p className="font-medium text-xs lg:text-lg text-base-content">Price: ${food.price}</p>
                                 <p className="font-medium text-xs lg:text-lg text-base-content">Purchase Count: {food.purchaseCount}</p>
                                 <p className="font-medium text-xs lg:text-lg text-base-content">Available Quantity: {food.availableQuantity}</p>
-                                <p className="font-medium text-xs lg:text-lg text-base-content">Description: {food.description}</p>
+                                {/* <p className="font-medium text-xs lg:text-lg text-base-content">Description: {food.description}</p> */}
                                 <div className="card-actions justify-end mt-2">
                                     <Link to={`/foods/${food._id}`}>
                                         <button className="btn btn-primary btn-xs md:btn-sm lg:btn-md lg:px-4 lg:text-lg">Details</button>

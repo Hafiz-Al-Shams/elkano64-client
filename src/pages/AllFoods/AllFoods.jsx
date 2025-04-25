@@ -17,7 +17,7 @@ const AllFoods = () => {
 
     const handleSearch = async (query) => {
         try {
-            const response = await fetch(`http://localhost:5000/searchFoods?search=${encodeURIComponent(query)}`);
+            const response = await fetch(`https://elkano64-server.vercel.app/searchFoods?search=${encodeURIComponent(query)}`);
             const data = await response.json();
             setResultFoods(data);
         } catch (error) {
@@ -54,7 +54,7 @@ const AllFoods = () => {
             <Helmet>
                 <title>Elkano64 - All Foods</title>
             </Helmet>
-            <h2 className="text-5xl font-semibold text-center mb-10 pt-14">{`All Foods (${resultFoods.length})`}</h2>
+            <h2 className="text-5xl font-semibold text-center mb-10 pt-14 underline">{`All Foods (${resultFoods.length})`}</h2>
 
             {/* SEARCHing + SORTING CONTAINER */}
             <div className="flex justify-between mb-8">
@@ -90,18 +90,18 @@ const AllFoods = () => {
             {/* FOOD CARDS */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-y-24 pb-24 pl-10">
                 {resultFoods.map((food) => (
-                    <div key={food._id} className="card card-compact bg-white p-3.5 w-96 shadow-xl">
+                    <div key={food._id} className="card card-compact bg-base-100 p-3.5 w-96 shadow-xl border-2">
                         <figure>
                             <img className="p-4 rounded-3xl" src={food.photo} alt="food" />
                         </figure>
                         <div className="card-body">
                             <h2 className="card-title text-2xl font-bold">{food.name}</h2>
-                            <p className="font-medium text-lg text-gray-700">Category: {food.category}</p>
-                            <p className="font-medium text-lg text-gray-700">Price: {food.price}</p>
-                            <p className="font-medium text-lg text-gray-700">Purchase-Count Today: {food.purchaseCount}</p>
-                            <p className="font-medium text-lg text-gray-700">Available Quantity: {food.availableQuantity}</p>
-                            <p className="font-medium text-lg text-gray-700">Description: {food.description}</p>
-                            <p className="font-medium text-lg text-gray-700">Origin: {food.foodOrigin}</p>
+                            <p className="font-medium text-lg text-base-content">Category: {food.category}</p>
+                            <p className="font-medium text-lg text-base-content">Price: ${food.price}</p>
+                            <p className="font-medium text-lg text-base-content">Purchase-Count Today: {food.purchaseCount}</p>
+                            <p className="font-medium text-lg text-base-content">Available Quantity: {food.availableQuantity}</p>
+                            {/* <p className="font-medium text-lg text-gray-700">Description: {food.description}</p>
+                            <p className="font-medium text-lg text-gray-700">Origin: {food.foodOrigin}</p> */}
                             <div className="card-actions justify-end mt-2">
                                 <Link to={`/foods/${food._id}`}>
                                     <button className="btn btn-primary px-4 text-lg">Details</button>

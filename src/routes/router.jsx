@@ -36,12 +36,12 @@ const router = createBrowserRouter([
             {
                 path: 'gallery',
                 element: <Gallery></Gallery>,
-                loader: () => fetch(`http://localhost:5000/foods`)
+                loader: () => fetch(`https://elkano64-server.vercel.app/foods`)
             },
             {
                 path: 'all-foods',
                 element: <AllFoods></AllFoods>,
-                loader: () => fetch(`http://localhost:5000/foods`)
+                loader: () => fetch(`https://elkano64-server.vercel.app/foods`)
             },
             {
                 path: 'add-food',
@@ -50,22 +50,22 @@ const router = createBrowserRouter([
             {
                 path: 'update-food/:foodId',
                 element: <PrivateRoute><UpdateFood></UpdateFood></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.foodId}`)
+                loader: ({ params }) => fetch(`https://elkano64-server.vercel.app/foods/${params.foodId}`)
             },
             {
                 path: 'foods/:foodId',
                 element: <FoodDetails></FoodDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.foodId}`)
+                loader: ({ params }) => fetch(`https://elkano64-server.vercel.app/foods/${params.foodId}`)
             },
             {
                 path: 'food-purchase/:foodId',
                 element: <PrivateRoute><FoodPurchase></FoodPurchase></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/foods/${params.foodId}`)
+                loader: ({ params }) => fetch(`https://elkano64-server.vercel.app/foods/${params.foodId}`)
             },
             {
                 path: 'my-foods/:emailId',
                 element: <PrivateRoute><MyFoods></MyFoods></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/foods/email/${params.emailId}`)
+                loader: ({ params }) => fetch(`https://elkano64-server.vercel.app/foods/email/${params.emailId}`)
             },
             {
                 path: 'my-orders',
