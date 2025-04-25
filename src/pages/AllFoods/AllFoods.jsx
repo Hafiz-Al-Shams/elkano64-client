@@ -17,7 +17,7 @@ const AllFoods = () => {
 
     const handleSearch = async (query) => {
         try {
-            const response = await fetch(`https://elkano64-server.vercel.app/searchFoods?search=${encodeURIComponent(query)}`);
+            const response = await fetch(`http://localhost:5000/searchFoods?search=${encodeURIComponent(query)}`);
             const data = await response.json();
             setResultFoods(data);
         } catch (error) {
@@ -77,13 +77,13 @@ const AllFoods = () => {
 
                 {/* Sorting Dropdown */}
                 <select
-                    className="select select-bordered w-48 text-lg"
+                    className="select select-bordered w-48 text-sm"
                     value={sortOrder}
                     onChange={(e) => handleSortByPrice(e.target.value)}
                 >
-                    <option value="">Sort by Price</option>
-                    <option value="asc">Ascending</option>
-                    <option value="desc">Descending</option>
+                    <option value="">Newest First</option>
+                    <option value="asc">Price low to high</option>
+                    <option value="desc">Price high to low</option>
                 </select>
             </div>
 
