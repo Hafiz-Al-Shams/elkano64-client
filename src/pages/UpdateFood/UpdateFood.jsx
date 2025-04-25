@@ -50,7 +50,7 @@ const UpdateFood = () => {
         }
 
         // // sending data to the server
-        fetch(`http://localhost:5000/foods/${_id}`, {
+        fetch(`https://elkano64-server.vercel.app/foods/${_id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

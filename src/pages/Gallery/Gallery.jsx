@@ -21,7 +21,7 @@ const Gallery = () => {
 
             <div className="bg-neutral-400 text-white pt-10 pb-28 px-6">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-5xl text-neutral-900 font-semibold text-center mb-10 mt-14">{`Gallery (${foods.length})`}</h2>
+                    <h2 className="text-5xl text-neutral-900 font-semibold text-center mb-10 mt-14 underline">{`Gallery (${foods.length})`}</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                         {foods.map((food, index) => (
                             <div
