@@ -77,13 +77,13 @@ const AllFoods = () => {
 
                 {/* Sorting Dropdown */}
                 <select
-                    className="select select-bordered w-48 text-lg"
+                    className="select select-bordered w-48 text-sm"
                     value={sortOrder}
                     onChange={(e) => handleSortByPrice(e.target.value)}
                 >
-                    <option value="">Sort by Price</option>
-                    <option value="asc">Ascending</option>
-                    <option value="desc">Descending</option>
+                    <option value="">Newest First</option>
+                    <option value="asc">Price low to high</option>
+                    <option value="desc">Price high to low</option>
                 </select>
             </div>
 
