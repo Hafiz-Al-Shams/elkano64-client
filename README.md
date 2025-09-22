@@ -3,8 +3,7 @@
 ![Elkano64 Screenshot](https://i.ibb.co.com/Z5G36gZ/Screenshot-6646.png)  
 
 ## Live Project  
-🔗 [Elkano64 Live1](https://elkano64.netlify.app/)  
-🔗 [Elkano64 Live2](https://elkano-64.web.app/)  
+🔗 [Elkano64 Live](https://elkano64.netlify.app/)
 
 ## Overview  
 Elkano64 is a modern restaurant management platform built to streamline restaurant operations, enhance customer experience, and improve digital engagement. This platform enables efficient order management, seamless food listing, and real-time user interaction.
@@ -56,7 +55,7 @@ Follow these steps to run the project locally:
 
 1. **Clone the repository:**  
    ```sh
-   git clone https://github.com/your-username/elkano64.git
+   git clone https://github.com/Hafiz-Al-Shams/elkano64-client.git
    cd elkano64
    ```
 
