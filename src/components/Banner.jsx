@@ -11,7 +11,7 @@ const Banner = () => {
                     <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white">Fresh Homemade Dishes</h1>
                     <h4 className="font-semibold text-base md:text-lg lg:text-2xl text-gray-300/90 pb-4">Our chefs cook with fresh and high quality ingredients. <br className="hidden sm:block" />We serve foods with finest tastes.</h4>
                     <Link to="/all-foods">
-                        <button className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition duration-300">
+                        <button className="bg-[rgba(63,0,231,0.85)] hover:bg-[rgba(63,0,231,0.98)] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition duration-300 shadow-[0_4px_6px_rgba(255,255,255,0.3),4px_0_6px_rgba(255,255,255,0.3),-4px_0_6px_rgba(255,255,255,0.3)] hover:shadow-[0_6px_12px_rgba(255,255,255,0.5),6px_0_12px_rgba(255,255,255,0.5),-6px_0_12px_rgba(255,255,255,0.5)]">
                             Shop The Hottest Foods
                         </button>
                     </Link>
@@ -28,7 +28,7 @@ const Banner = () => {
                     <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white">Ingredients Grown on Our Farms</h1>
                     <h4 className="font-semibold text-base md:text-lg lg:text-2xl text-gray-300/90 pb-4">Enjoy the food experience mostly from our farms, through <br className="hidden sm:block" />our kitchen, and to your fork.</h4>
                     <Link to="/all-foods">
-                        <button className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition duration-300">
+                        <button className="bg-[rgba(63,0,231,0.85)] hover:bg-[rgba(63,0,231,0.98)] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition duration-300 shadow-[0_4px_6px_rgba(255,255,255,0.3),4px_0_6px_rgba(255,255,255,0.3),-4px_0_6px_rgba(255,255,255,0.3)] hover:shadow-[0_6px_12px_rgba(255,255,255,0.5),6px_0_12px_rgba(255,255,255,0.5),-6px_0_12px_rgba(255,255,255,0.5)]">
                             Shop The Hottest Foods
                         </button>
                     </Link>
@@ -45,7 +45,7 @@ const Banner = () => {
                     <h1 className="font-bold text-4xl md:text-5xl lg:text-6xl text-white">We Take Care with Love</h1>
                     <h4 className="font-semibold text-base md:text-lg lg:text-2xl text-gray-300/90 pb-4">We are passionate about making amazing recipes. <br className="hidden sm:block" />We serve foods simply full of the finest tastes.</h4>
                     <Link to="/all-foods">
-                        <button className="bg-[rgba(82,195,3,0.85)] hover:bg-[rgba(82,195,3,0.98)] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition duration-300">
+                        <button className="bg-[rgba(63,0,231,0.85)] hover:bg-[rgba(63,0,231,0.98)] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-medium transition duration-300 shadow-[0_4px_6px_rgba(255,255,255,0.3),4px_0_6px_rgba(255,255,255,0.3),-4px_0_6px_rgba(255,255,255,0.3)] hover:shadow-[0_6px_12px_rgba(255,255,255,0.5),6px_0_12px_rgba(255,255,255,0.5),-6px_0_12px_rgba(255,255,255,0.5)]">
                             Shop The Hottest Foods
                         </button>
                     </Link>
