@@ -125,9 +125,9 @@ const FoodPurchase = () => {
 
             <div className='lg:w-3/4 mx-auto mb-28'>
 
-                <div className="flex justify-center items-center pt-6 pb-8">
+                <div className="flex justify-center items-center pt-6 pb-3">
 
-                    <h1 className="text-5xl font-bold">Purchase This Food</h1>
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">Purchase This Food</h1>
                 </div>
 
                 <div className="card bg-base-100 w-full shrink-0 shadow-2xl">

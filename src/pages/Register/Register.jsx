@@ -140,7 +140,7 @@ const Register = () => {
                         <div className="text-center">
                             <p>Already have an account?</p>
                             <Link to="/signIn">
-                                <button className="mt-1.5 btn btn-accent px-8">Login</button>
+                                <button className="mt-1.5 btn bg-base-300 text-base-content px-8">Login</button>
                             </Link>
                         </div>
                         <SocialLogin></SocialLogin>

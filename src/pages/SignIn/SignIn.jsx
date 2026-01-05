@@ -88,7 +88,7 @@ const SignIn = () => {
                     <div className="text-center">
                         <p>New to this website?</p>
                         <Link to="/register">
-                            <button className="mt-1.5 btn btn-success font-normal text-white">Create new account</button>
+                            <button className="mt-1.5 btn bg-base-300 font-normal text-base-content">Create new account</button>
                         </Link>
                     </div>
                     <SocialLogin></SocialLogin>
